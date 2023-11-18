@@ -7,3 +7,20 @@
 /*********************************************************************/
 
 #include "header.h"
+
+int main()
+{
+	int fd = open("sort.csv", O_RDONLY);
+	
+	do{
+	if(fd == -1)
+	{
+		printf("|##############|\n");
+		printf("|    NO FILE   |\n");
+		printf("|##############|\n");
+		return (0);
+	}
+	}while(1);
+	printf("\n");
+	return (0);
+}
